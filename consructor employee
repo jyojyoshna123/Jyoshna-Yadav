@@ -1,0 +1,30 @@
+class Employee {
+    int id;
+    String name;
+    String role;
+    String company;
+    double salary;
+
+    Employee(int id, String name, String role, String company, double salary) {
+        this.id = id;
+        this.name = name;
+        this.role = role;
+        this.company = company;
+        this.salary = salary;
+    }
+
+    public void display() {
+        System.out.println("Name is: " + this.name);
+        System.out.println("Role is: " + this.role);
+        System.out.println("ID is: " + this.id);
+        System.out.println("Salary is: " + this.salary);
+        System.out.println("Company is: " + this.company);
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Employee e1 = new Employee(240, "Jyoshna", "Python Developer", "HCL", 50000.3);
+        e1.display();
+    }
+}
+
